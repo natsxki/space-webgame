@@ -1,0 +1,32 @@
+<!-- ======== TP Web, exercise 3 - Lylia Mesa (IGR 2025)======== -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spaceship</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/animate.js" defer></script>
+  <link rel="icon" type="image/png" href="media/favicon.png">
+</head>
+
+<body>
+  <h1>Spaceship (game)</h1>
+<p id="credit">(c) Lylia Mesa 2025</p>
+  <p>change direction : press[D], aim & destroy asteroids : press & release[SPACE]</p>
+  <p><button id="playButton" onclick="toggleAnim()">Play</button>
+    <button id="reset" onclick="reset()">Reset</button></p>
+  <div id="canvas">
+    <div id="score">Score : 0 </div><div id="highscore">Highscore : 0 </div>
+    <div id="spaceship">
+      <img src="media/spaceship.png" alt="Spaceship">
+    </div>
+  </div>
+
+<p>
+<input type="range" id="speed" name="speed" min="2" max="40" value="10" />
+<label for="speed">Speed (the higher the speed the higher the score)</label>
+</p>
+
+</body>
+</html>
