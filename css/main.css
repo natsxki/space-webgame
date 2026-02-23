@@ -1,0 +1,91 @@
+/*======== TP Web, exercise 3 - Lylia Mesa (IGR 2025)========*/
+
+@font-face {
+  font-family: 'pixelFont';           
+  src: url('../media/dogica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  color: white;
+  background-color: black;
+  
+  background-image: url("../media/sky4.jpg");
+  background-size: cover;    
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+body {
+    font-family:'pixelFont';
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color : red;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+}
+
+#credit {
+    display:flex; 
+    justify-content : center;
+    font-size : 10px; 
+    color : navy;
+}
+
+#spaceship {
+  position: absolute;
+  background-size: contain; /* whole image fits but is not cropped*/
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+#canvas {
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+#playButton{
+    font-family:'pixelFont';
+}
+
+#reset{
+    font-family:'pixelFont';
+}
+
+.asteroid {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  user-select: none;
+  pointer-events: none;
+  animation: spin 4s linear infinite; 
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#aimLine {
+  pointer-events: none;
+}
+
+#score, #highscore {
+  color : red;
+}
+
+
+
+
