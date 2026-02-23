@@ -4,7 +4,7 @@ A tiny space themed survival &amp; shooting game made with HTML, CSS, JS
 The goal is to score the highest, by surviving the longest and destroying the asteroids with a laser beam.
 
 
-##__How to play : 
+## How to play : 
 
 * The first game will start on its own when the page loads.
 * The player can pause/resume the game, or restart it from 0 with the reset button. 
